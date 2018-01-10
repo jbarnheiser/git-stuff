@@ -10,16 +10,43 @@
 [color]
     ui = auto
 [alias]
-    st = status
-    co = checkout
-    di = diff
-    dc = diff --cached
-    amend = commit --amend
+    a = add .
     aa = add --all
-    pom = push origin master
+    amend = commit --amend
+    ants = describe HEAD
     b = branch
+    bl = blame
+    cfp = cat-file -p
+    cfs = cat-file -s
+    cft = cat-file -t
+    cl = clone
+    clb = clone --bare
+    co = checkout
+    dc = diff --cached
     dh1 = diff HEAD~1
+    di = diff
+    f = fetch
+    fv = fetch -v
+    i = init
+    ib = init --bare
+    l = log
     lol = log --oneline --graph --decorate
+    ls = log --stat
+    lsf = ls-files
+    lsr = ls-remote
+    mb = merge-base
+    nants = describe --tags HEAD
+    pa = patch
+    po = push origin
+    pom = push origin master
+    rb = rebase
+    rbi = rebase -i
+    rev = revert
+    rh = reset --hard
+    rl = reflog
+    rs = reset --soft
+    st = status
+    tan = tag -a
     lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 # FREEBSD    lg = "! git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative | more -R"
 
