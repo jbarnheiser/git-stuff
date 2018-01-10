@@ -15,6 +15,7 @@
     amend = commit --amend
     ants = describe HEAD
     b = branch
+    ba = branch -a
     bl = blame
     cfp = cat-file -p
     cfs = cat-file -s
@@ -22,6 +23,7 @@
     cl = clone
     clb = clone --bare
     co = checkout
+    D = branch -D
     dc = diff --cached
     dh1 = diff HEAD~1
     di = diff
@@ -35,6 +37,7 @@
     ls = log --stat
     lsf = ls-files
     lsr = ls-remote
+    m = merge
     mb = merge-base
     nants = describe --tags HEAD
     pa = patch
@@ -48,6 +51,9 @@
     rs = reset --soft
     st = status
     tan = tag -a
+    tm = "!git reset HEAD@{$1} #"
+    undo = revert HEAD
+    wb = "!exist=$(git branch -a | grep $1 | wc -l); if [ $exist -eq 0 ] ; then git branch $1; git reset --hard HEAD^; git checkout $1; else git reset --soft HEAD^; git stash; git checkout $1; git stash pop; fi #"
     lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 # FREEBSD    lg = "! git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative | more -R"
 
