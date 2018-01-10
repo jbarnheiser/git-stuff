@@ -26,6 +26,7 @@
     dh1 = diff HEAD~1
     di = diff
     f = fetch
+    files = "!git diff --name-status $1^ $1 #"
     fv = fetch -v
     i = init
     ib = init --bare
