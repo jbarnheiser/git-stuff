@@ -19,6 +19,7 @@
     pom = push origin master
     b = branch
     dh1 = diff HEAD~1
+    lol = log --oneline --graph --decorate
     lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 # FREEBSD    lg = "! git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative | more -R"
 
