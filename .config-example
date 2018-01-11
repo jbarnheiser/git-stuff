@@ -17,6 +17,8 @@
     b = branch
     ba = branch -a
     bl = blame
+    c = commit
+    ca = "!git add .; git commit"
     cfp = cat-file -p
     cfs = cat-file -s
     cft = cat-file -t
